@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Input Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .given-input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Elements</h1>
+
+    <form>
+        <div class="given-input">
+            <label for="text">Text Input:</label>
+            <input type="text" id="text" name="text" placeholder="Enter text">
+        </div>
+
+        <div class="given-input">
+            <label for="number">Number Input:</label>
+            <input type="number" id="number" name="number" placeholder="Enter a number">
+        </div>
+
+        <div class="given-input">
+            <label for="date">Date Input:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div class="given-input">
+            <label for="time">Time Input:</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div class="given-input">
+            <label for="email">Email Input:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="given-input">
+            <label for="password">Password Input:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+        </div>
+
+        <div class="given-input">
+            <label for="range">Range Input:</label>
+            <input type="range" id="range" name="range" min="0" max="100">
+        </div>
+
+        <div class="given-input">
+            <label for="color">Color Input:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div class="given-input">
+            <label for="file">File Input:</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+        <div class="given-input">
+            <label for="textarea">Textarea:</label>
+            <textarea id="textarea" name="textarea" rows="4" placeholder="Enter your text here..."></textarea>
+        </div>
+        <div class="given-input">
+            <label for="dropdown">Dropdown Input:</label>
+            <select id="dropdown" name="dropdown">
+                <option value=""></option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+
+        <div class="given-input">
+            <label>Checkbox Input:</label>
+            <label><input type="checkbox" name="checkbox1"> Option 1</label>
+            <label><input type="checkbox" name="checkbox2"> Option 2</label>
+        </div>
+
+        <div class="given-input">
+            <label>Radio Input:</label>
+            <label><input type="radio" name="radio" value="radio1"> Radio 1</label>
+            <label><input type="radio" name="radio" value="radio2"> Radio 2</label>
+        </div>
+
+        <div class="given-input">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

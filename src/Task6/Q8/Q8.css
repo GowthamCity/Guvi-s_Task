@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+}
+
+.aadhaar{
+    width: 300px;
+    border: 2px solid #83f105;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.photo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.photo img {
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.details {
+    padding: 15px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
