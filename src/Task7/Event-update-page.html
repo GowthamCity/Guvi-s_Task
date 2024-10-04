@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="Event-update-page.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Event I</h1>
+        <h3>Number of available seats: <span id="available-seats">23</span></h3>
+
+        <div class="secondbox">
+            <div class="rightbox">
+
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="phone">Phone No.:</label>
+                        <input type="text" id="phone" name="phone" required><br><br>
+
+                        <label for="seats">Number of seats: <select id="seats" name="seats"></label>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        </select><br><br>
+
+                        <label for="attendee2">Name of Attendee 2:</label>
+                        <input type="text" id="attendee2" name="attendee2"><br><br>
+
+                        <button type="submit">Submit</button>
+                        <button type="button" onclick="resetForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box">
+                
+                <div class="circle">  <span class="imagealign"><b>Image</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
