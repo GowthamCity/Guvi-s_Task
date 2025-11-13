@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Management App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2 class="text-center mt-4">Users List</h2>
+    <a href="/user/new" class="btn btn-primary mb-2">Add User</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>User First Name</th>
+                <th>User Last Name</th>
+                <th>User Email Id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.firstName}"></td>
+            <td th:text="${user.lastName}"></td>
+            <td th:text="${user.email}"></td>
+            <td>
+                <a th:href="@{'/user/edit/' + ${user.id}}" class="btn btn-info">Update</a>
+                <a th:href="@{'/user/delete/' + ${user.id}}" class="btn btn-danger">Delete</a>
+                <a th:href="@{'/user/view/' + ${user.id}}" class="btn btn-success">View</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
