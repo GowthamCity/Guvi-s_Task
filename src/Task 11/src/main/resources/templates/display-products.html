@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Display Products</title>
+</head>
+<body>
+<h2>All Products</h2>
+
+<form th:action="@{/display}" method="get">
+    <label>Filter by category:</label>
+    <input type="text" name="category" th:value="${category}" />
+    <button type="submit">Search</button>
+</form>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+    </tr>
+    <tr th:each="p : ${products}">
+        <td th:text="${p.name}"></td>
+        <td th:text="${p.price}"></td>
+        <td th:text="${p.category}"></td>
+    </tr>
+</table>
+
+<a th:href="@{/}">Back to Home</a>
+</body>
+</html>
